@@ -6,6 +6,7 @@ const nextConfig = (phase: string): NextConfig => {
     return {
       env: {
         environment: "DEVELOPMENT",
+        db_collection: "local_daveraspberry",
       },
     };
   }
@@ -13,6 +14,7 @@ const nextConfig = (phase: string): NextConfig => {
   return {
     env: {
       environment: "PRODUCTION",
+      db_collection: "prod_daveraspberry",
     },
   };
 };
